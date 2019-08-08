@@ -1,34 +1,21 @@
 <head>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
     <style>
-        .box {
+        .box1 {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            font: message-box;
+            color: whitesmoke;
         }
     </style>
 </head>
 
-<body>
-    <script language=javascript>
-        var curIndex = 0;
-        var timeInterval = 2000;
-        var arr = new Array();
-        arr[0] = "imgs/1.png";
-        arr[1] = "imgs/2.png";
-        setInterval(changeImg, timeInterval);
-
-        function changeImg() {
-            var obj = document.getElementById("obj");
-            if (curIndex == arr.length) {
-                obj.src = arr[curIndex - 1];
-                return;
-            } else {
-                curIndex += 1;
-            }
-            obj.src = arr[curIndex];
-        }
-    </script>
-    <div class="box"> <img id=obj src="imgs/1.png" width=1000 border=0></div>
+<body background="imgs/background.jpg">
+    <div class="box1">
+        <h1>老婆七夕快乐！！</h1>
+        
+    </div>
 </body>
