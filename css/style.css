@@ -40,7 +40,30 @@ body {
     width: 21em;
 }
 
+.detailsRight {
+    background: #f1e4f3;
+    box-shadow: 0em 0em 2em rgba(0, 0, 0, 0.1);
+    color: #43278c;
+    display: flex;
+    flex-direction: column;
+    right: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    width: 100em;
+}
+
 .preview .details {
+    -webkit-animation: fade 1s ease-in-out;
+    animation: fade 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.preview .detailsRight {
     -webkit-animation: fade 1s ease-in-out;
     animation: fade 1s ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -206,23 +229,22 @@ button:active:before {
     animation: expand 1s ease-in-out;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    /*opacity: 0;*/
-    height: 100%;
-    left: 30%;
-    top: 0;
-    width: 70%;
+    height: 170%;
+    right: 0;
+    top: 30%;
+    width: 100%;
 }
 
 .expanded svg {
-    height: 170%;
-    left: -25%;
+    height: 100%;
+    left: -50%;
     position: relative;
     top: -40%;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: 170%;
+    width: 100%;
 }
 
 .expanded .view {
@@ -246,6 +268,21 @@ div.expanded {
     height: 100%;
     justify-content: center;
     left: 0;
+    /*opacity: 0;*/
+    position: absolute;
+    top: 0;
+    width: 40%;
+    z-index: 10;
+}
+
+.expanded .detailsRight {
+    -webkit-animation: slide 0.8s ease-out;
+    animation: slide 0.8s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    height: 100%;
+    justify-content: center;
+    right: 0;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -299,6 +336,13 @@ div.expanded {
 .expanded .close {
     -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
+}
+
+.expanded .more {
+    position: relative;
+    right: 10%;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 @-webkit-keyframes fade {
