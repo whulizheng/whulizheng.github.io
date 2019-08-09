@@ -81,6 +81,10 @@ body {
     display: none;
 }
 
+.cake {
+    position: relative;
+}
+
 button {
     background: #f1e4f3;
     border: 2px solid #43278c;
@@ -152,10 +156,9 @@ button:active:before {
 
 .picture {
     height: 9em;
-    left: 51%;
-    overflow: hidden;
+    left: 60%;
     position: absolute;
-    top: 51%;
+    top: 40%;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 14em;
 }
