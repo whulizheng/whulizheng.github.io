@@ -9,7 +9,42 @@ center_fixed {
     transform: translate(-50%, -50%);
 }
 
-Background {
+top {
+    /* 设置宽度高度背景颜色 */
+    height: 40px;
+    /*高度改为自动高度*/
+    width: 100%;
+    left: 0;
+    background: rgba(59, 56, 56, 0.9);
+    position: fixed;
+    /*固定在顶部*/
+    top: 0;
+    /*离顶部的距离为0*/
+    margin-bottom: 5px;
+}
+
+top list {
+    width: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    float: left;
+    /* 使li内容横向浮动，即横向排列  */
+    margin-right: 200px;
+    /* 两个li之间的距离*/
     position: relative;
-    right: 0px
+}
+
+top list elements {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    color: rgb(250, 250, 250)
+}
+
+top list logo {
+    position: relative;
+    top: 10%;
+    left: 100%;
 }
