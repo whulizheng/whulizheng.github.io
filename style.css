@@ -7,8 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 iframe {
   width: 65%;
-  height: 65%;
-  transform:scale("auto");
+  height: 60%;
   position:relative;
   display: flex;
   margin:0 auto;
