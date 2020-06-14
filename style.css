@@ -379,9 +379,7 @@ li > a:only-child:after { content: ''; }
     text-align: center;
 }
 .banner {
-    /*background: url(banner.png) no-repeat center;*/
     min-height: 100vh;
-    background-size: cover;
     position: relative;
 	
 }
