@@ -5,12 +5,13 @@
 	<title>数据新闻展示</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome icons -->
-	<link href="fontawesome.css" rel="stylesheet">
+	<link href="CSS/fontawesome.css" rel="stylesheet">
 	<!-- font-awesome icons -->
-	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css-family=Nunito-200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i.css" rel="stylesheet">
+	<link href="CSS/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="CSS/css-family=Nunito-200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i.css"
+		rel="stylesheet">
 
 </head>
 
@@ -18,7 +19,7 @@
 	<!-- banner -->
 	<div class="hero__background">
 		<video autoplay="autoplay" preload="auto" loop="loop" class="video-playing" id="home-video">
-			<source src="banner.mp4" type="video/mp4">
+			<source src="VIDEO/banner.mp4" type="video/mp4">
 			</source>
 		</video>
 	</div>
@@ -30,7 +31,7 @@
 				<!-- nav -->
 				<nav class="py-3">
 					<div id="logo">
-						<h1> <a href="index.html">一个小组</a></h1>
+						<h1> <a href="index.html">我们小组</a></h1>
 					</div>
 
 					<label for="drop" class="toggle">菜单</label>
@@ -38,6 +39,9 @@
 					<ul class="menu mt-lg-4">
 						<li class="mr-lg-4 mr-3 active"><a href="index-1.html">主页</a></li>
 						<li class="mr-lg-4 mr-3"><a href="#about">摘要</a></li>
+						<li class="mr-lg-4 mr-3"><a href="#method">战“疫”政策</a></li>
+						<li class="mr-lg-4 mr-3"><a href="#recover">货币政策与复工</a></li>
+						<li class="mr-lg-4 mr-3"><a href="#next">走好下一步</a></li>
 					</ul>
 				</nav>
 				<!-- //nav -->
@@ -88,7 +92,7 @@
 			</div>
 		</div>
 	</section>
-	<iframe text-align="center" frameborder="0" src="gdp_bar.html" seamless="seamless"></iframe>
+	<iframe text-align="center" frameborder="0" src="CHART/gdp_bar.html" seamless="seamless"></iframe>
 
 	<div class="about py-5">
 		<div class="container py-3">
@@ -105,7 +109,7 @@
 			</div>
 		</div>
 	</div>
-	<iframe text-align="center" frameborder="0" src="policy_bar.html" seamless="seamless"></iframe>
+	<iframe text-align="center" frameborder="0" src="CHART/policy_bar.html" seamless="seamless"></iframe>
 	<div class="about py-5">
 		<div class="iner py-5">
 			<div class="container py-3">
@@ -156,7 +160,7 @@
 		</div>
 	</section>
 	<!-- services -->
-	<div class="about py-5">
+	<div id="method" class="about py-5">
 		<div class="container py-3">
 			<div class="row">
 				<div class="middle-heading text-center mb-5">
@@ -182,7 +186,7 @@
 			</div>
 		</div>
 		<div style="transform: scale(80%);" align="center">
-			<img class="img-fluid" src="tmp_2.jpg">
+			<img class="img-fluid" src="IMG/tmp_2.jpg">
 		</div>
 		<div class="container">
 			<div class=" row">
@@ -197,7 +201,7 @@
 			</div>
 		</div>
 	</section>
-	<iframe text-align="center" frameborder="0" src="rate_line.html" seamless="seamless"></iframe>
+	<iframe text-align="center" frameborder="0" src="CHART/rate_line.html" seamless="seamless"></iframe>
 	<section class="services py-5">
 		<div class="container iner">
 			<p class=" iner mt-4">
@@ -217,14 +221,14 @@
 			</div>
 		</div>
 	</section>
-	<iframe style="transform: scale(50%);" frameborder="0" src="loan_pie.html" seamless="seamless"></iframe>
+	<iframe style="transform: scale(50%);" frameborder="0" src="CHART/loan_pie.html" seamless="seamless"></iframe>
 	<section class="services py-5">
 		<div class="container iner">
 			<p class=" iner mt-4">
 				不过这1.8万亿，不是天女散花的飘落到社会各界的，央行在执行贷款前，是充满针对性的。第一阶段和第二阶段的金额都是属于防疫专项再贷款、再贴现资金，此时能让生产防护用品的工厂能够有充足的资金投入到生产中，同时也能保证基层工作的顺利推进。第三阶段主要是针对中小银行增加的资金，因为中小银行的客户大多为中小微企业，这些企业在疫情期间受到的影响是最大的，央行这一步也是大大增加了这些企业的生存能力，并且推动社会各界的复工复产。
 		</div>
 		<div align="center">
-			<img class="img-fluid" src="tmp_5.jpg">
+			<img class="img-fluid" src="IMG/tmp_5.jpg">
 		</div>
 		<div class="container iner">
 			<p class=" iner mt-4">
@@ -233,9 +237,16 @@
 
 		</div>
 	</section>
-	<iframe text-align="center" frameborder="0" src="bus_bar.html" seamless="seamless"></iframe>
-
-	<div class="about py-5">
+	<iframe text-align="center" frameborder="0" src="CHART/bus_bar.html" seamless="seamless"></iframe>
+	<section class="service-bottom bg py-5">
+		<div class="container">
+			<div class="middle-heading1 text-center mb-md-5 mb-4">
+				<h4>从中国财政和货币政策空间的角度来看，同时考虑到政府的 执行能力，通过刺激国内投资 和消费来实现5%或更高的年增长率并非不可能。 </h4>
+				<h3 style="left: auto;">——林毅夫</h3>
+			</div>			
+		</div>
+	</section>
+	<div class="about py-5" id="recover">
 		<div class="container py-3">
 			<div class="middle-heading text-center mb-5">
 				<h3>货币政策与复工</h3>
@@ -252,7 +263,7 @@
 			</div>
 		</div>
 	</div>
-	<iframe text-align="center" frameborder="0" src="CPI_pie.html" seamless="seamless"></iframe>
+	<iframe text-align="center" frameborder="0" src="CHART/CPI_pie.html" seamless="seamless"></iframe>
 	<div class="about py-5">
 		<div class="container py-3">
 			<div class="col-lg-12 pl-4">
@@ -262,9 +273,9 @@
 			</div>
 		</div>
 	</div>
-	<iframe text-align="center" frameborder="0" src="ind_pie.html" seamless="seamless"></iframe>
+	<iframe text-align="center" frameborder="0" src="CHART/ind_pie.html" seamless="seamless"></iframe>
 
-	<div class="about py-5">
+	<div class="about py-5" id="next">
 		<div class="container py-3">
 			<div class="middle-heading text-center mb-5">
 				<h3>走好下一步</h3>

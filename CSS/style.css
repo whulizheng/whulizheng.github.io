@@ -87,6 +87,13 @@ label {
     text-transform: capitalize;
     font-weight: 700;
 }
+.middle-heading1 h4 {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000000;
+    text-transform: capitalize;
+    font-weight: 700;
+}
 a.move-top span {
     color: #fff;
     width: 35px;
@@ -667,7 +674,7 @@ h5.blog-title.card-title.font-weight-bold {
 /*-- //blog --*/
 /*-- contact --*/
 section#contact{
-	 background: url(contact.png) no-repeat center;
+	 background: url(../IMG/contact.png) no-repeat center;
     background-size: cover;	
 }
 .agileinfo_mail_grids {
