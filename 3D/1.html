@@ -20,7 +20,7 @@
             camera.lookAt(new THREE.Vector3(0, 2, 0));//lookAt()设置相机所看的位置
             scene.add(camera);//把相机添加到场景中
             var loader = new THREE.OBJLoader();//在init函数中，创建loader变量，用于导入模型
-            loader.load('配合.obj', function (obj) {//第一个表示模型路径，第二个表示完成导入后的回调函数，一般我们需要在这个回调函数中将导入的模型添加到场景中
+            loader.load('/3D/配合.obj', function (obj) {//第一个表示模型路径，第二个表示完成导入后的回调函数，一般我们需要在这个回调函数中将导入的模型添加到场景中
                 obj.traverse(function (child) {
                     if (child instanceof THREE.Mesh) {
                         child.material.side = THREE.DoubleSide;
