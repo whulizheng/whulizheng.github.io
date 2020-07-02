@@ -1,3 +1,6 @@
+/**
+ * @author mrdoob / http://mrdoob.com/
+ */
 
 import {
 	BufferGeometry,
@@ -13,7 +16,7 @@ import {
 	Points,
 	PointsMaterial,
 	Vector3
-} from "/3D/libs/three.module.js";
+} from "../../../build/three.module.js";
 
 var OBJLoader = ( function () {
 
