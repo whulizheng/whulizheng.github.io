@@ -1,0 +1,106 @@
+/* ===================================================================
+ * fonts.scss
+ *
+ * ------------------------------------------------------------------- */
+
+
+/*
+ * lora
+================================================================================ */
+@font-face {
+    font-family: "lora-regular";
+    src: url("lora-regular-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-regular-webfont.woff2*/ format("woff2"), url("lora-regular-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-regular-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora-italic";
+    src: url("lora-italic-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-italic-webfont.woff2*/ format("woff2"), url("lora-italic-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-italic-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora-bold";
+    src: url("lora-bold-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-bold-webfont.woff2*/ format("woff2"), url("lora-bold-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-bold-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora-bold-italic";
+    src: url("lora-bolditalic-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-bolditalic-webfont.woff2*/ format("woff2"), url("lora-bolditalic-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/lora/lora-bolditalic-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*
+ * montserrat
+================================================================================ */
+@font-face {
+    font-family: "montserrat-black";
+    src: url("montserrat-black-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-black-webfont.woff2*/ format("woff2"), url("montserrat-black-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-black-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-extrabold";
+    src: url("montserrat-extrabold-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-extrabold-webfont.woff2*/ format("woff2"), url("montserrat-extrabold-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-extrabold-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("montserrat-bold-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-bold-webfont.woff2*/ format("woff2"), url("montserrat-bold-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-bold-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url("montserrat-semibold-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-semibold-webfont.woff2*/ format("woff2"), url("montserrat-semibold-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-semibold-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("montserrat-medium-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-medium-webfont.woff2*/ format("woff2"), url("montserrat-medium-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-medium-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("montserrat-regular-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-regular-webfont.woff2*/ format("woff2"), url("montserrat-regular-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-regular-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-light";
+    src: url("montserrat-light-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-light-webfont.woff2*/ format("woff2"), url("montserrat-light-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-light-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-extralight";
+    src: url("montserrat-extralight-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-extralight-webfont.woff2*/ format("woff2"), url("montserrat-extralight-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-extralight-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-thin";
+    src: url("montserrat-thin-webfont.woff2")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-thin-webfont.woff2*/ format("woff2"), url("montserrat-thin-webfont.woff")/*tpa=http://demo.qfpffmp.cn/cssthemes5/twts_192_glint/fonts/montserrat/montserrat-thin-webfont.woff*/ format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*# sourceMappingURL=fonts.css.map */
