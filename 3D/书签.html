@@ -99,7 +99,7 @@
 				this.resetCamera();
 				this.controls = new TrackballControls(this.camera, this.renderer.domElement);
 
-				let ambientLight = new THREE.AmbientLight(0x404040);
+				//let ambientLight = new THREE.AmbientLight(0x404040);
 				let directionalLight1 = new THREE.DirectionalLight(0xC0C090);
 				let directionalLight2 = new THREE.DirectionalLight(0xC0C090);
                 let directionalLight3 = new THREE.DirectionalLight(0xC0C090);
@@ -111,7 +111,7 @@
 				this.scene.add(directionalLight1);
 				this.scene.add(directionalLight2);
                 this.scene.add(directionalLight3)
-				this.scene.add(ambientLight);
+				//this.scene.add(ambientLight);
 
 				//let helper = new THREE.GridHelper(1200, 60, 0xFF4444, 0x404040);
 				//this.scene.add(helper);
