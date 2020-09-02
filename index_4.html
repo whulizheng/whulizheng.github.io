@@ -36,10 +36,10 @@
             <div class="table-cell">
                 <div class="container">
                     <!--<p class="display-6 color-d">Hello, world!</p>-->
-                    <h1 style="color: #f90;" class="intro-title mb-4">扫进来干嘛啊</h1>
-                    <p class="intro-subtitle"><span class="text-slider-items">你好坏,你笨蛋,哎呀呀,气死了,你啊你,不知道不能随便扫码？</span><strong
+                    <h1 style="color: #f90;" class="intro-title mb-4">点进来干嘛？</h1>
+                    <p class="intro-subtitle"><span class="text-slider-items">啊这,不会吧,你想看什么？</span><strong
                             class="text-slider"></strong></p>
-                    <p class="pt-3"><a style="background-color: #f90;border:none; color: black; font: bold;" class="btn btn-primary btn js-scroll px-4" href="https://qzone.qq.com/" role="button">已满18</a></p>
+                    <p id = porn class="pt-3"><a style="background-color: #f90;border:none; color: black; font-weight: bolder;" class="btn btn-primary btn js-scroll px-4" onclick="age = parseInt(document.getElementById('age').innerHTML) + 20;document.getElementById('age').innerHTML = age;alert('您确定？请仔细看看');  if(age>100){alert('baby you are my porn, I miss you');document.getElementById('porn').hidden=true} " role="button">已满<span id=age>18</span></a></p>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
         </div>
     </div>
     <!-- gallery section -->
-    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="JS/jquery-3.2.1.min.js"></script>
     <script src="JS/plugins.js"></script>
     <script src="JS/preload.js"></script>
 
