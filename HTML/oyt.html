@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>虚假的密码</title>
+    <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/animate.min.css">
+    <link rel="stylesheet" href="../CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/preloader.css">
+    <script src="../JS/modernizr.js"></script>
+    <script src="../JS/pace.min.js"></script>
+
+    <script type="text/javascript">
+        function password() {
+            var testV = 1;
+            var str = window.location.href
+            var index = str .lastIndexOf("/");  
+            str  = str .substring(0,index + 1);
+            var pass1 = prompt('you know what the password is 😘', '');
+            while (testV < 3) {
+                if (!pass1)
+                    history.go(-1);
+
+                window.location.href = str + pass1 + ".html";//修改需要密码认证的网页   
+                break;
+            }
+            return " ";
+        }
+        document.write(password());   
+    </script>
+
+</head>
+
+<body>
+
+    <section role="banner" id="home">
+        <header id="header">
+            <div class="header-content clearfix"> <a class="logo">
+                    password
+                </a>
+            </div>
+        </header>
+
+
+
+        <!-- preloader
+    ================================================== -->
+        <div id="preloader">
+            <div id="loader">
+                <div class="line-scale-pulse-out">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery section -->
+        <script src="../JS/jquery-3.2.1.min.js"></script>
+        <script src="../JS/plugins.js"></script>
+        <script src="../JS/preload.js"></script>
+</body>
+
+</html>
