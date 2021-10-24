@@ -112,11 +112,11 @@
             University
           </p>
           <p class="wow fadeInDown animated" style="color: black; font-size: 0.5cm;">
-            &emsp;&emsp;邮箱/e-mail：<a
+            &emsp;&emsp;邮箱 / e-mail：<a
               href="mailto:whulizheng@outlook.com?body=form github page">whulizheng@outlook.com</a>
           </p>
           <p class="wow fadeInDown animated" style="color: black; font-size: 0.5cm;">
-            &emsp;&emsp;我的简历/my resume：<a href="mailto:whulizheng@outlook.com?body=我是***，我需要你的一份简历">链接/link</a>
+            &emsp;&emsp;我的简历 / my resume：<a href="mailto:whulizheng@outlook.com?body=我是***，我需要你的一份简历">链接/link</a>
           </p>
         </div>
       </div>
@@ -219,7 +219,44 @@
       </div>
     </div>
   </div>
+  <script>
+    !function () {
 
+      var timelimit = 50;
+
+      var open = false;
+
+      setInterval(function () {
+
+        var starttime = new Date();
+
+        debugger; if (new Date() - starttime > timelimit) {
+          alert("调试我网页干嘛？")
+          open = true;
+          window.stop();
+          var p=document.getElementById('bio')
+          p.remove();
+          p=document.getElementById('gallery')
+          p.remove();
+          var str = window.location.href
+          var index = str .lastIndexOf("/");  
+          str  = str .substring(0,index);
+          window.location.href = str+"/HTML/000/error.html"
+
+
+        } else {
+
+          open = false
+
+        }
+
+      }, 500)
+
+    }();
+
+
+
+  </script>
   <script src="JS/share/jquery-3.2.1.min.js"></script>
   <script src="JS/share/plugins.js"></script>
   <script src="JS/share/preload.js"></script>
