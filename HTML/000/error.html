@@ -134,32 +134,4 @@
     document.addEventListener('mouseleave', mouseLeft, false);
 
   </script>
-    <script>
-      !function () {
-  
-        var timelimit = 50;
-  
-        var open = false;
-  
-        setInterval(function () {
-  
-          var starttime = new Date();
-  
-          debugger; if (new Date() - starttime > timelimit) {
-            alert("调试我网页干嘛？")
-            open = true;
-            window.stop();
-          } else {
-  
-            open = false
-  
-          }
-  
-        }, 500)
-  
-      }();
-  
-  
-  
-    </script>
 </body>
