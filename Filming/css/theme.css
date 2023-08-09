@@ -87,10 +87,6 @@ a, .a:hover {
 .fixed-top {
   border-bottom: 1px solid #f1f1f1; }
 
-/* line 28, src/assets/scss/theme.scss */
-footer.footer {
-  border-top: 1px solid #f1f1f1; }
-
 /* line 31, src/assets/scss/theme.scss */
 .nav-link, .dropdown-item {
   font-weight: 700; }
