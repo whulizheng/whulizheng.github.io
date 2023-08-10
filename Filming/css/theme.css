@@ -1,6 +1,7 @@
 /* line 1, src/assets/scss/theme.scss */
 body {
   background-color: #000000;
+  cursor: url("../imgs/elements/circle-regular.svg") 16 16, auto;
   padding-top: 70px; }
 /*-- banner --*/
 .hero {
@@ -8,6 +9,8 @@ body {
   height: 600px;
   position: relative;
 }
+
+
 
 .hero_background {
   width: 100%;
@@ -58,6 +61,7 @@ img {
 
 /* line 5, src/assets/scss/theme.scss */
 a, .a:hover {
+  cursor: url("../imgs/elements/circle-dot-solid.svg") 16 16, auto;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
