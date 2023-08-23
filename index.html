@@ -99,17 +99,18 @@
 
         <div class="col-md-8 col-xs-8 col-sm-12">
           <h3 class="media-heading wow fadeInDown animated text-center">
-            &emsp;这是一个BIO
+            &emsp;这是一个简介
           </h3>
+          <h3 class="media-heading wow fadeInDown animated text-center">
+            &emsp;This is a BIO
+          </h3>
+          
           <p>
             &emsp;
           </p>
+
           <p class="wow fadeInDown animated" style="color: black; font-size: 0.5cm;">
-            &emsp;&emsp;一个武汉大学国家网络安全学院的在读本科生
-          </p>
-          <p class="wow fadeInDown animated" style="color: black; font-size: 0.5cm;">
-            &emsp;&emsp;An undergraduate from School of Cyber Science and Engineering, Wuhan
-            University
+            &emsp;&emsp;一个来自澳门大学的研究生。A P.G student from FST, University of Macau.
           </p>
           <p class="wow fadeInDown animated" style="color: black; font-size: 0.5cm;">
             &emsp;&emsp;邮箱 / e-mail：<a
@@ -129,8 +130,18 @@
     <div class="container">
       <div class="section-header">
         <h2 class="wow fadeInDown animated">这是一些内容</h2>
+        <h2 class="wow fadeInDown animated">Some of His Works.</h2>
+        
       </div>
       <div class="row no-gutter" id="001">
+        <div class="col-lg-4 col-md-6 col-sm-6 work"> <a href="/Filming/index.html" class="work-box"> <img
+          src="IMG/000/filming.png" alt="">
+        <div class="overlay">
+        </div>
+        <!-- overlay -->
+      </a>
+    </div>
+
         <div class="col-lg-4 col-md-6 col-sm-6 work"> <a href="HTML/001/index.html" class="work-box"> <img
               src="IMG/000/战疫经济.jpg" alt="">
             <div class="overlay">
@@ -162,14 +173,7 @@
           </a>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 work"> <a href="/Filming/index.html"
-          class="work-box"> <img src="IMG/000/filming.png" alt="">
-          <div class="overlay">
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
+        
 
 
         <div class="col-lg-4 col-md-6 col-sm-6 work"> <a href="https://ieeexplore.ieee.org/document/9534001"
@@ -207,17 +211,17 @@
   </section>
   <!-- preloader
     ================================================== -->
-    <div id="preloader">
-      <div id="loader">
-        <div class="line-scale-pulse-out">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+  <div id="preloader">
+    <div id="loader">
+      <div class="line-scale-pulse-out">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
+  </div>
   <script>
     !function () {
 
@@ -230,17 +234,17 @@
         var starttime = new Date();
 
         debugger; if (new Date() - starttime > timelimit) {
-          alert("调试我网页干嘛？")
+          alert("don't debug me plz.")
           open = true;
           window.stop();
-          var p=document.getElementById('bio')
+          var p = document.getElementById('bio')
           p.remove();
-          p=document.getElementById('gallery')
+          p = document.getElementById('gallery')
           p.remove();
           var str = window.location.href
-          var index = str .lastIndexOf("/");  
-          str  = str .substring(0,index);
-          window.location.href = str+"/HTML/000/error.html"
+          var index = str.lastIndexOf("/");
+          str = str.substring(0, index);
+          window.location.href = str + "/HTML/000/error.html"
 
 
         } else {
