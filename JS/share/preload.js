@@ -47,3 +47,30 @@
         
         
 })(jQuery);
+
+var iframe = document.getElementById('pdf-frame');
+var preloader = document.getElementById('preloader');
+
+// 如果支持 load 事件（多数现代浏览器对 iframe 加载 PDF 会触发）
+iframe.onload = function() {
+    // 延迟一点确保渲染完成（可选）
+    setTimeout(function() {
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+        document.documentElement.classList.remove('cl-preload');
+        document.documentElement.classList.add('cl-loaded');
+    }, 300);
+};
+
+// 同时保留 window.onload 作为兜底
+window.addEventListener('load', function() {
+    // 如果 iframe 没触发 onload（比如失败），3秒后强制隐藏
+    setTimeout(function() {
+        if (preloader && preloader.style.display !== 'none') {
+            preloader.style.display = 'none';
+            document.documentElement.classList.remove('cl-preload');
+            document.documentElement.classList.add('cl-loaded');
+        }
+    }, 3000);
+});
