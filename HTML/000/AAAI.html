@@ -15,8 +15,63 @@
       border: none;
     }
   </style>
+  <link rel="stylesheet" href="../../CSS/000/preloader.css">
 </head>
 <body>
   <embed src="../../PDF/UDAP.pdf" type="application/pdf">
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader">
+      <div class="line-scale-pulse-out">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    !function () {
+
+      var timelimit = 50;
+
+      var open = false;
+
+      setInterval(function () {
+
+        var starttime = new Date();
+
+        debugger; if (new Date() - starttime > timelimit) {
+          alert("don't debug me plz.")
+          open = true;
+          window.stop();
+          var p = document.getElementById('bio')
+          p.remove();
+          p = document.getElementById('gallery')
+          p.remove();
+          var str = window.location.href
+          var index = str.lastIndexOf("/");
+          str = str.substring(0, index);
+          window.location.href = str + "/HTML/000/error.html"
+
+
+        } else {
+
+          open = false
+
+        }
+
+      }, 500)
+
+    }();
+
+
+
+  </script>
+  <script src="../../JS/share/jquery-3.2.1.min.js"></script>
+  <script src="../../JS/share/plugins.js"></script>
+  <script src="../../JS/share/preload.js"></script>
 </body>
 </html>
