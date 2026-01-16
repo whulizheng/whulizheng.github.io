@@ -9,18 +9,14 @@
       padding: 0;
       overflow: hidden;
     }
-    embed {
-      width: 100vw;
-      height: 100vh;
-      border: none;
-    }
   </style>
   <link rel="stylesheet" href="../../CSS/000/preloader.css">
 </head>
 <body>
-  <iframe id="pdf-frame" src="../../PDF/UDAP.pdf" style="width:100vw; height:100vh; border:none;"></iframe>
-  <!-- preloader
-    ================================================== -->
+  <!-- 可选：保留 iframe（但不会等它加载） -->
+  <!-- <iframe src="../../PDF/UDAP.pdf" style="display:none;"></iframe> -->
+
+  <!-- Preloader -->
   <div id="preloader">
     <div id="loader">
       <div class="line-scale-pulse-out">
@@ -32,46 +28,12 @@
       </div>
     </div>
   </div>
+
   <script>
-    !function () {
-
-      var timelimit = 50;
-
-      var open = false;
-
-      setInterval(function () {
-
-        var starttime = new Date();
-
-        debugger; if (new Date() - starttime > timelimit) {
-          alert("don't debug me plz.")
-          open = true;
-          window.stop();
-          var p = document.getElementById('bio')
-          p.remove();
-          p = document.getElementById('gallery')
-          p.remove();
-          var str = window.location.href
-          var index = str.lastIndexOf("/");
-          str = str.substring(0, index);
-          window.location.href = str + "/HTML/000/error.html"
-
-
-        } else {
-
-          open = false
-
-        }
-
-      }, 500)
-
-    }();
-
-
-
+    // 1 秒后直接跳转到 arXiv
+    setTimeout(function() {
+      window.location.href = "https://arxiv.org/pdf/2601.07253";
+    }, 1000);
   </script>
-  <script src="../../JS/share/jquery-3.2.1.min.js"></script>
-  <script src="../../JS/share/plugins.js"></script>
-  <script src="../../JS/share/preload.js"></script>
 </body>
 </html>
